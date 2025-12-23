@@ -27,8 +27,8 @@ This repository contains a complete, CPU-only implementation of a deepfake detec
 
 ### 1️ Clone the repository
 bash
-git clone https://github.com/mihirchouhan/deepfake_ensemble.git
-cd deepfake_ensemble
+- git clone https://github.com/mihirchouhan/deepfake_ensemble.git
+ - cd deepfake_ensemble
 
 ### 2 Create virtual environment
 python -m venv venv
