@@ -1,10 +1,9 @@
 # Virtual environment
 venv/
+.venv/
 
-# Datasets
+# Data & generated files
 data/
-
-# Generated data
 preprocessed_data/
 precomputed_landmarks/
 features/ggf/
@@ -12,8 +11,12 @@ features/spectrum/
 features/glcm/
 dataset/
 
-# Models
+# Models & binaries
+models/
 models_ml/*.pkl
+*.dat
+*.dll
+*.pyd
 
 # Python cache
 __pycache__/
