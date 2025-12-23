@@ -31,49 +31,49 @@ bash
  - cd deepfake_ensemble
 
 ### 2 Create virtual environment
-python -m venv venv
-venv\Scripts\activate    # Windows
+- python -m venv venv
+- venv\Scripts\activate    # Windows
 
 ### 3 Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+- pip install --upgrade pip
+- pip install -r requirements.txt
 
 ### 4 Dataset Setup
-Create the following structure:
+- Create the following structure:
 
-data/
-├── celeba_real/
-│   └── img_align_celeba/
-└── fake_kaggle/
+-data/
+- ├── celeba_real/
+- │   └── img_align_celeba/
+- └── fake_kaggle/
 
 
-Place:
+- Place:
 
-CelebA real face images in img_align_celeba
+- CelebA real face images in img_align_celeba
 
-GAN-generated fake images in fake_kaggle
+- GAN-generated fake images in fake_kaggle
 
 ### 5 Running the Project (Step-by-Step)
 STEP 1: Preprocess images
-python preprocessing/preprocess_images.py
+- python preprocessing/preprocess_images.py
 
 STEP 2: Sample dataset
-python preprocessing/sample_dataset.py
+- python preprocessing/sample_dataset.py
 
 STEP 3: Landmark extraction (MediaPipe)
-python preprocessing/extract_landmarks_mediapipe.py
+- python preprocessing/extract_landmarks_mediapipe.py
 
 STEP 4: Gray Gradient Feature (GGF)
-python features/ggf.py
+- python features/ggf.py
 
 STEP 5A: Spectrum Feature (FFT)
-python features/spectrum.py
+- python features/spectrum.py
 
 STEP 5B: Texture Feature (GLCM)
-python features/glcm.py
+- python features/glcm.py
 
 STEP 6: Feature fusion
-python features/feature_fusion.py
+- python features/feature_fusion.py
 
 STEP 7: Train & evaluate BP Neural Network
 python models_ml/bpnn.py
