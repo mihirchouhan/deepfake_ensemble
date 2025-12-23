@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+
+# Datasets
+data/
+
+# Generated data
+preprocessed_data/
+precomputed_landmarks/
+features/ggf/
+features/spectrum/
+features/glcm/
+dataset/
+
+# Models
+models_ml/*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+*.npy
