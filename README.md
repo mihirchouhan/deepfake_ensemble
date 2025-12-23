@@ -75,7 +75,9 @@ STEP 5B: Texture Feature (GLCM)
 - python features/glcm.py
 
 STEP 6: Feature fusion
+-pip install scikit-learn==1.4.1.post1
+
 - python features/feature_fusion.py
 
 STEP 7: Train & evaluate BP Neural Network
-python models_ml/bpnn.py
+-python models_ml/bpnn.py
