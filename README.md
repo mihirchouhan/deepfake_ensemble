@@ -55,12 +55,14 @@ bash
 
 ### 5 Running the Project (Step-by-Step)
 STEP 1: Preprocess images
+- pip install opencv-python
 - python preprocessing/preprocess_images.py
 
 STEP 2: Sample dataset
 - python preprocessing/sample_dataset.py
 
 STEP 3: Landmark extraction (MediaPipe)
+- pip install mediapipe==0.10.9
 - python preprocessing/extract_landmarks_mediapipe.py
 
 STEP 4: Gray Gradient Feature (GGF)
