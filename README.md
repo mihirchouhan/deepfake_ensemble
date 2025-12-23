@@ -80,4 +80,4 @@ STEP 6: Feature fusion
 - python features/feature_fusion.py
 
 STEP 7: Train & evaluate BP Neural Network
-- python models_ml/bpnn.py
+- python models/bpnn.py
